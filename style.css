@@ -1,0 +1,62 @@
+:root {
+    --vermelho: #E50914;
+    --preto: #171717;
+    --branco: white;
+    --cinza: #ffffffc9;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: var(--preto);
+}
+
+.navbar {
+    background-color: var(--preto);
+    width: 100%;
+}
+
+.navbar-brand {
+    color: var(--vermelho);
+}
+
+.navbar-brand:hover {
+    color: var(--vermelho);
+}
+
+.nav-link {
+    color: var(--branco);
+}
+
+.nav-link:hover {
+    color: var(--cinza);
+}
+
+.nav-item>a>img {
+    margin: 10px;
+}
+
+.img-nav {
+    width: 35px;
+    margin: auto;
+}
+
+a>img#rotated {
+    transform: rotate(-90deg);
+    width: 10px;
+    margin: 0;
+    margin-top: 20px;
+}
+
+#rotated:hover {
+    transform: rotate(90deg);
+}
+
+main {
+    width: 100%;
+    background-image: url(Imagens/fundo-principal.jpg);
+}
