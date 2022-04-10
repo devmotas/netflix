@@ -15,6 +15,11 @@ body {
     background-color: var(--preto);
 }
 
+.navbar,
+.navbar-expand-lg {
+    height: 10vh;
+}
+
 .navbar {
     background-color: var(--preto);
     width: 100%;
@@ -60,5 +65,25 @@ a>img#rotated {
 .d-block,
 .w-100 {
     width: 100vw;
-    height: 100vh;
+    height: 90vh;
+}
+
+.carousel-caption {
+    position: absolute;
+    right: 0%;
+    bottom: 20vh;
+    left: 4%;
+    padding-top: 1.25rem;
+    padding-bottom: 1.25rem;
+    color: #fff;
+    text-align: left;
+}
+
+.titulo {
+    font-size: 4vw;
+}
+
+.descricao {
+    width: 600px;
+    font-size: 21px;
 }
