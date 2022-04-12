@@ -1,89 +1,161 @@
-:root {
-    --vermelho: #E50914;
-    --preto: #171717;
-    --branco: white;
-    --cinza: #ffffffc9;
-}
-
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
-body {
-    background-color: var(--preto);
-}
-
-.navbar,
-.navbar-expand-lg {
-    height: 10vh;
-}
-
-.navbar {
-    background-color: var(--preto);
-    width: 100%;
-}
-
-.navbar-brand {
-    color: var(--vermelho);
-    margin-left: 3vw;
-}
-
-.navbar-brand:hover {
-    color: var(--vermelho);
-}
-
-.nav-link {
-    color: var(--branco);
-}
-
-.nav-link:hover {
-    color: var(--cinza);
-}
-
-.nav-item>a>img {
-    margin: 10px;
-}
-
-.img-nav {
-    width: 35px;
-    margin: auto;
-}
-
-a>img#rotated {
-    transform: rotate(-90deg);
-    width: 10px;
-    margin: 0;
-    margin-top: 20px;
-}
-
-#rotated:hover {
-    transform: rotate(90deg);
-}
-
-.d-block,
-.w-100 {
-    width: 100vw;
-    height: 90vh;
-}
-
-.carousel-caption {
-    position: absolute;
-    right: 0%;
-    bottom: 20vh;
-    left: 4%;
-    padding-top: 1.25rem;
-    padding-bottom: 1.25rem;
-    color: #fff;
-    text-align: left;
-}
-
-.titulo {
-    font-size: 4vw;
-}
-
-.descricao {
-    width: 600px;
-    font-size: 21px;
-}
+             :root {
+                --vermelho: #E50914;
+                --preto: #040506;
+                --cinza: #ffffffc9;
+                --branco-nav: #B3B3B3;
+                --hover-nav: #E5E5E5;
+                --descricao: #ffffff;
+                --branco: white;
+                --botao-cinza: #6d6d6eb3;
+                --botao-cinza-hover: #6d6d6e;
+                @font-face {
+                    font-family: 'Netflix-Sans';
+                    font-weight: 100;
+                    font-display: optional;
+                    src: url(https://assets.nflxext.com/ffe/siteui/fonts/netflix-sans/v3/NetflixSans_W_Th.woff2) format('woff2'), url(https://assets.nflxext.com/ffe/siteui/fonts/netflix-sans/v3/NetflixSans_W_Th.woff) format('woff')
+                }
+            }
+            
+            * {
+                margin: 0;
+                padding: 0;
+                box-sizing: border-box;
+            }
+            
+            body {
+                background-color: var(--preto);
+            }
+            
+            .navbar,
+            .navbar-expand-lg {
+                height: 10vh;
+            }
+            
+            a {
+                font-weight: 450;
+            }
+            
+            .navbar {
+                background-color: var(--preto);
+                width: 100%;
+            }
+            
+            .navbar-brand {
+                color: var(--vermelho);
+                margin-left: 3vw;
+            }
+            
+            .navbar-brand:hover {
+                color: var(--vermelho);
+            }
+            
+            .nav-link {
+                color: var(--branco-nav);
+                font-size: 14px;
+            }
+            
+            .nav-link:hover {
+                color: var(--hover-nav);
+            }
+            
+            .nav-item>a>img {
+                margin: 10px;
+            }
+            
+            .img-nav {
+                width: 35px;
+                margin: auto;
+            }
+            
+            a>img#rotated {
+                transform: rotate(-90deg);
+                width: 10px;
+                margin: 0;
+                margin-top: 20px;
+            }
+            
+            #rotated:hover {
+                transform: rotate(90deg);
+            }
+            
+            .d-block,
+            .w-100 {
+                width: 100vw;
+                height: 90vh;
+            }
+            
+            .carousel-caption {
+                position: absolute;
+                right: 0%;
+                bottom: 30vh;
+                left: 4%;
+                padding-top: 1.25rem;
+                padding-bottom: 1.25rem;
+                color: var(--descricao);
+                text-align: left;
+            }
+            
+            .titulo {
+                font-size: 4vw;
+            }
+            
+            .descricao {
+                width: 600px;
+                font-size: 21px;
+            }
+            
+            .carousel-inner {
+                position: relative;
+            }
+            
+            .div-botao {
+                position: absolute;
+                top: 70%;
+                left: 5%;
+                display: inline-flex;
+            }
+            
+            .botao {
+                padding: 5px 20px;
+                color: gray;
+                border-radius: 5px;
+                border: none;
+                font-style: normal;
+                font-size: 18px;
+                font-stretch: 0px;
+                font-weight: 600;
+            }
+            
+            #assistir {
+                color: var(--preto);
+                background-color: var(--branco);
+            }
+            
+            #assistir:hover {
+                background-color: var(--hover-nav);
+            }
+            
+            #img-assistir {
+                transform: rotate(-180deg);
+                width: 25px;
+                margin: 0;
+                padding: 0;
+                margin-right: 10px;
+            }
+            
+            #mais {
+                background-color: var(--botao-cinza);
+                color: var(--branco);
+            }
+            
+            #mais:hover {
+                background-color: var(--botao-cinza-hover);
+            }
+            
+            .img-mais {
+                padding: 10px;
+            }
+            
+            #mais {
+                display: inline-flex;
+            }
