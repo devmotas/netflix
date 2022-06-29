@@ -12,7 +12,7 @@ A aplicação consiste em mostrar a Landing Page da Netflix. Foi estudado como f
 
 
 ## Layout web
-!(https://github.com/devmotas/netflix/blob/main/Imagens/home.png)
+![Web 1](https://github.com/devmotas/netflix/blob/main/Imagens/home.png)
 
 # Tecnologias utilizadas
 ## Front end
